@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- fontawesome script for service icons (discord, lastfm, etc) -->
+        <script src="https://kit.fontawesome.com/ae94f20c1a.js" crossorigin="anonymous"></script>
+
+	      <!-- set viewport to make mobile size correctly -->
+	      <meta name="viewport" content="width=width">
+
+        <style>
+         body {
+             color: white;
+             font-family: "Monaco", "Courier New", monospace;
+             background:
+                 linear-gradient(red, transparent),
+                 linear-gradient(to top left, lime, transparent),
+                 linear-gradient(to top right, blue, transparent);
+             background-blend-mode: screen;
+             background-size: 250% 250%;
+
+             /* use steps instead of constant motion to significantly improve performance */
+             animation: Animation 30s steps(85) infinite;
+         }
+
+         div.top {
+             text-align: right;
+             font-size: 15px;
+         }
+
+         a {
+             color: white;
+         }
+
+         img.powwu {
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             margin-top: 1%;
+             width: 100px;
+         }
+
+         div.disclaimer {
+             margin-top: 2%;
+             font-size:20px;
+             text-align: center;
+         }
+
+         div.h {
+             margin-top: 6%;
+             font-size:35px;
+             text-align: center;
+         }
+
+         div.methods-normal {
+             font-size: 70px;
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             margin-top: 4%;
+             text-align: center;
+         }
+         div.methods-quirky {
+             font-size: 45px;
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             margin-top: 2%;
+             text-align: center;
+         }
+         div.spacer {
+             height: 10%;
+             width:100%;
+         }
+
+         div.bottom {
+             text-align: center;
+             text-size:18px;
+             margin-top:20%;
+         }
+
+
+         @keyframes Animation {
+             0%{background-position:10% 0%}
+             50%{background-position:90% 90%}
+             55%{background-position:90% 90%}
+             100%{background-position:10% 0%}
+         }
+
+         html, body {
+             height: 96%;
+         }
+
+        </style>
+    </head>
+    <body>
+        <noscript>
+            <meta http-equiv="refresh" content="0; url='/donate/basichtml'"/>
+            <a class="no" href="/basichtml">please click here if you're not redirected automatically</a>
+        </noscript>
+        <div class="top">
+            <a href="/basichtml">load basic html</a>
+        </div>
+
+	      <script>
+	      </script>
+        <img class="powwu" src="/assets/powwu-outline.svg">
+        <!-- <div class="h">
+             <h>donate</h>
+             </div> -->
+
+        <div class="disclaimer">
+            <b>I use donations to fund open-source projects only</b>. Any excessive amount donated will be given to a charity of my choosing and documented on my <a href="/mastodon/tusks">update Mastodon (coming soon)</a>.
+        </div>
+
+        <div class="h">
+            <h>Please select your preferred payment method:</h>
+        </div>
+
+        <div class="methods-normal">
+            <a href="https://ko-fi.com/powwu"><i class="fa-brands fa-paypal"></i></a>
+            <a href="https://ko-fi.com/powwu"><i class="fa-solid fa-credit-card"></i></a>
+        </div>
+        <div class="methods-quirky">
+            <a href="/donate/btc"><i class="fa-brands fa-bitcoin"></i></a>
+            <a href="/donate/xmr"><i class="fa-brands fa-monero"></i></a>
+            <a href="/donate/xch"><i class="fa-solid fa-leaf"></i></a>
+        </div>
+
+        <img src="https://powwu.xyz/trns">
+    </body>
+</html>
+
+
